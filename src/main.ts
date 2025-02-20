@@ -1,4 +1,5 @@
-import "./style.css";
-import template from "./views/sign-in.template";
+import _template from "./views/test.template";
 
-document.querySelector<HTMLDivElement>("#app")!.append(template);
+const data = { test: "테스트" };
+
+document.getElementById("app")!.innerHTML = _template(data);
