@@ -1,5 +1,8 @@
-import Handlebars from "handlebars";
+import Handlebars from 'handlebars';
 
-const _template = `<p>{{test}}</p>`;
+const template = `
+    <h1 class="text-cyan-300">
+        Hello world!
+    </h1>`;
 
-export default Handlebars.compile(_template);
+export default Handlebars.compile(template);
