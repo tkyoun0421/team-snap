@@ -1,7 +1,16 @@
+import tsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vite';
-import tailwindcss from '@tailwindcss/vite';
+import path from 'path';
 
 export default defineConfig({
-  base: './',
-  plugins: [tailwindcss()],
+  plugins: [tsconfigPaths()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      '@pages': path.resolve(__dirname, 'src/pages'),
+      '@types': path.resolve(__dirname, 'src/types'),
+      '@utils': path.resolve(__dirname, 'src/utils'),
+      '@views': path.resolve(__dirname, 'src/views'),
+    },
+  },
 });
