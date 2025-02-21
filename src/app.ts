@@ -2,18 +2,23 @@ import Auth from '@pages/auth';
 import NotFound from '@pages/not-found';
 
 function router() {
-  const path = location.hash;
-  console.log(path);
+  const path = location.pathname;
 
   switch (path) {
-    case './':
+    case '/':
       const auth = new Auth('#app');
       auth.render();
+      break;
+    case '/signup':
+      const signup = new Auth('#app');
+      signup.render();
+      break;
     default:
-      const pageNotFound = new NotFound('#app');
-      pageNotFound.render();
+      const notFound = new NotFound('#app');
+      notFound.render();
+      break;
   }
 }
 
-window.addEventListener('hashchange', router);
 window.addEventListener('DOMContentLoaded', router);
+window.addEventListener('hashchange', router);

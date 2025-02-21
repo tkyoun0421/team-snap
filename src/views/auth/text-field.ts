@@ -1,8 +1,9 @@
 import template from './text-field.template';
 
 export default class TextField {
-  template = template;
-  container: HTMLDivElement;
+  private template = template;
+  private container: HTMLDivElement;
+
   constructor(containerId: string) {
     this.container = document.querySelector(containerId) as HTMLDivElement;
     this.render(true);
