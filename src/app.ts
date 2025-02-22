@@ -6,6 +6,7 @@ function router() {
 
   switch (path) {
     case '/':
+      // {{alias 수정 해야함}}
       const auth = new Auth('#app');
       auth.render();
       break;
