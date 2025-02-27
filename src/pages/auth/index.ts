@@ -1,3 +1,5 @@
+import { TextField } from '@/views/auth';
+
 export default class Auth {
   container: HTMLDivElement;
 
@@ -6,8 +8,7 @@ export default class Auth {
   }
 
   public render() {
-    const pEl = document.createElement('p');
-    pEl.innerHTML = 'auth';
-    this.container.append(pEl);
+    const textField = new TextField('#app');
+    console.log(textField);
   }
 }
