@@ -1,4 +1,4 @@
-import { TextField } from '@/views/auth';
+import SignUp from '@/pages/auth/sign-up';
 
 export default class Auth {
   container: HTMLDivElement;
@@ -8,7 +8,6 @@ export default class Auth {
   }
 
   public render() {
-    const textField = new TextField('#app');
-    console.log(textField);
+    const signUp = new SignUp('#app');
   }
 }

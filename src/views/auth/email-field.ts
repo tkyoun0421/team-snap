@@ -1,33 +1,21 @@
-import template from './text-field.template';
+import template from './email-field.template';
 
 interface Props {
-  id: string;
-  password: string;
-  label: string;
-  placeholder: string;
-  type: 'email' | 'password';
   require: boolean;
 }
 
 const defaultProps = {
-  id: '',
-  password: '',
-  label: '',
-  type: 'email',
-  placeholder: '',
   require: false,
 };
 
-export default class TextField {
+export default class EmailField {
   private template = template;
   private container: HTMLDivElement;
   private data: Props;
 
-  constructor(containerId: string, data: Props) {
-    this.container = document.querySelector(containerId) as HTMLDivElement;
+  constructor(container: string, data: Props) {
+    this.container = document.querySelector(container) as HTMLDivElement;
     this.data = { ...defaultProps, ...data };
-
-    this.render(true);
   }
 
   render(append: boolean = false) {
