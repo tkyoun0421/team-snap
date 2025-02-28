@@ -9,9 +9,9 @@ const template = /* html */ `
           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
         </svg>
       </span>        
-      <label class="block text-sm" for="password">비밀번호</label>
+      <label class="block text-sm" for="{{type}}">{{label}}</label>
     </div>
-    <input id="{{id}}" name="{{id}}" type="password" value="{{text}}" placeholder="비밀번호를 입력해주세요." {{#if require}}required{{/if}} aria-label="Password" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded">
+    <input id="{{id}}" name="{{id}}" type="{{type}}" value="{{text}}" placeholder="{{placeholder}}" {{#if require}}required{{/if}} aria-label="{{type}}" class="w-full px-5 py-1 text-gray-700 bg-gray-200 rounded">
     </div>
 
     <div class="mt-1">
