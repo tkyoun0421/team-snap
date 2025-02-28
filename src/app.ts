@@ -1,5 +1,5 @@
-import SignUp from '@/pages/auth/sign-up';
 import NotFound from '@/pages/not-found';
+import { Auth } from '@/pages/auth';
 
 function router() {
   const path = location.pathname;
@@ -10,7 +10,7 @@ function router() {
     //   auth.render();
     //   break;
     case '/':
-      const signup = new SignUp('#app');
+      const signup = new Auth('#app', { title: '회원가입', type: 'signup' });
       signup.render();
       break;
     default:
