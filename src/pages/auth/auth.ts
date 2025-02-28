@@ -1,6 +1,6 @@
 import { InputField } from '@/views/auth';
-import template from './auth.template';
 import { Fields } from '@/types/common';
+import template from './auth.template';
 
 interface Props {
   title: string;
