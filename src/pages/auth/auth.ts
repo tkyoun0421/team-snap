@@ -56,7 +56,6 @@ export default class Auth {
     const form = document.getElementById('auth-form') as HTMLFormElement;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      console.log(this.validate());
     });
   }
 
