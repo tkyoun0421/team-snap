@@ -13,3 +13,8 @@ export const signupFailure = (error: string) => ({
   type: AuthActionType.SIGN_UP_FAILURE,
   payload: { error },
 });
+
+export type AuthAction =
+  | ReturnType<typeof signupRequest>
+  | ReturnType<typeof signupSuccess>
+  | ReturnType<typeof signupFailure>;

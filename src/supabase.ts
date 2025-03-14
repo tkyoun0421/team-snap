@@ -1,4 +1,3 @@
-import { Database } from '@/types/database';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 
 export default class Supabase {

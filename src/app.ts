@@ -5,7 +5,8 @@ function router() {
 
   switch (path) {
     case '/':
-      new SignUpView('app');
+      const view = new SignUpView('#app');
+      view.render();
       break;
     default:
       break;

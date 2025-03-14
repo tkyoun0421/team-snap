@@ -7,7 +7,7 @@ interface User {
 
 interface Action {
   type: AuthActionType;
-  payload: User;
+  payload?: User | null;
 }
 
 export default class AuthDispatcher {
@@ -18,6 +18,7 @@ export default class AuthDispatcher {
   }
 
   dispatch(action: Action): void {
+    console.log('dispatch: ', action);
     for (const callback of this.callbacks) {
       callback(action);
     }

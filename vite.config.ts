@@ -6,8 +6,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      '@controllers': path.resolve(__dirname, './src/controllers'),
-      '@models': path.resolve(__dirname, './src/models'),
+      '@actions': path.resolve(__dirname, './src/actions'),
+      '@dispatcher': path.resolve(__dirname, './src/dispatcher'),
+      '@stores': path.resolve(__dirname, './src/stores'),
       '@types': path.resolve(__dirname, './src/types'),
       '@views': path.resolve(__dirname, './src/views'),
     },

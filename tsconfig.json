@@ -3,8 +3,9 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"],
-      "@controllers/*": ["./controllers/*"],
-      "@models/*": ["./models/*"],
+      "@actions/*": ["./actions/*"],
+      "@dispatcher/*": ["./dispatcher/*"],
+      "@stores/*": ["./stores/*"],
       "@types/*": ["./types/*"],
       "@views/*": ["./views/*"]
     },
