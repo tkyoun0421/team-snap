@@ -1,21 +1,13 @@
-import NotFound from '@/views/pages/not-found';
-import { Auth } from '@/views/pages/auth';
+import SignUpView from '@/views/auth/signup.view';
 
 function router() {
   const path = location.pathname;
 
   switch (path) {
-    // case '/':
-    //   const auth = new Auth('#app');
-    //   auth.render();
-    //   break;
     case '/':
-      const signup = new Auth('#app', { title: '회원가입', type: 'signup' });
-      signup.render();
+      new SignUpView('app');
       break;
     default:
-      const notFound = new NotFound('#app');
-      notFound.render();
       break;
   }
 }

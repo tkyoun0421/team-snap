@@ -1,0 +1,11 @@
+export enum AuthActionType {
+  // SIGN UP
+  SIGN_UP_REQUEST,
+  SIGN_UP_SUCCESS,
+  SIGN_UP_FAILURE,
+
+  //LOGIN
+  LOGIN_REQUEST,
+  LOGIN_SUCCESS,
+  LOGIN_FAILURE,
+}
