@@ -1,6 +1,6 @@
-import { InputField } from '@/views/auth';
-import { Fields } from '@/types/common';
+import { InputField } from '@/views/sign-input';
 import template from './auth.template';
+import { Fields } from '@/types/common';
 
 interface Props {
   title: string;
@@ -52,10 +52,11 @@ export default class Auth {
     return isAllValid;
   }
 
-  submitSignUpForm() {
+  private submitSignUpForm() {
     const form = document.getElementById('auth-form') as HTMLFormElement;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      console.log('test: ', this.data);
     });
   }
 

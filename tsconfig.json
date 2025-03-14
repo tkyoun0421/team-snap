@@ -3,9 +3,9 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"],
-      "@pages/*": ["./pages/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@models/*": ["./models/*"],
       "@types/*": ["./types/*"],
-      "@utils/*": ["./utils/*"],
       "@views/*": ["./views/*"]
     },
     "target": "ES2020",

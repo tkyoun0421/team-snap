@@ -1,5 +1,5 @@
-import NotFound from '@/pages/not-found';
-import { Auth } from '@/pages/auth';
+import NotFound from '@/views/pages/not-found';
+import { Auth } from '@/views/pages/auth';
 
 function router() {
   const path = location.pathname;
